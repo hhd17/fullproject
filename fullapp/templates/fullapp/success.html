@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+</head>
+<body>
+    <h2>Book Successfully Created!</h2>
+    <p><strong>Title:</strong> {{ book.title }}</p>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+
+    <a href="{% url 'edit_book' book.id %}">Edit Book</a>
+    <br>
+    <a href="{% url 'delete_book' book.id %}">Delete Book</a>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
